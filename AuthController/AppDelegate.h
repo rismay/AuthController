@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WSMLogger/WSMLogger.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

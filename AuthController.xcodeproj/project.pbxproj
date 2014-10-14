@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DF72C41A81DB9FDCCC8430 /* libPods-AuthController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8847F87BF561F4DBC9FF301 /* libPods-AuthController.a */; };
+		24670B97C04D7CFF21E3E4ED /* libPods-AuthControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD56A5620EC57C126A432BEA /* libPods-AuthControllerTests.a */; };
 		6EC75FC219EDB945001EFD9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FC119EDB945001EFD9E /* main.m */; };
 		6EC75FC519EDB945001EFD9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FC419EDB945001EFD9E /* AppDelegate.m */; };
-		6EC75FC819EDB945001EFD9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FC719EDB945001EFD9E /* ViewController.m */; };
-		6EC75FCB19EDB945001EFD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FC919EDB945001EFD9E /* Main.storyboard */; };
 		6EC75FCD19EDB945001EFD9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FCC19EDB945001EFD9E /* Images.xcassets */; };
 		6EC75FD019EDB945001EFD9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FCE19EDB945001EFD9E /* LaunchScreen.xib */; };
 		6EC75FDC19EDB945001EFD9E /* AuthControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FDB19EDB945001EFD9E /* AuthControllerTests.m */; };
+		6EC75FE919EDB9F4001EFD9E /* SAMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FE619EDB9F4001EFD9E /* SAMAuthViewController.m */; };
+		6EC75FEA19EDB9F4001EFD9E /* SAMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FE619EDB9F4001EFD9E /* SAMAuthViewController.m */; };
+		6EC75FEB19EDB9F4001EFD9E /* WSMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FE819EDB9F4001EFD9E /* WSMAuthViewController.m */; };
+		6EC75FEC19EDB9F4001EFD9E /* WSMAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FE819EDB9F4001EFD9E /* WSMAuthViewController.m */; };
+		6EC75FF219EDBA06001EFD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FED19EDBA06001EFD9E /* Main.storyboard */; };
+		6EC75FF319EDBA06001EFD9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FED19EDBA06001EFD9E /* Main.storyboard */; };
+		6EC75FF419EDBA06001EFD9E /* WSMVectorLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FEF19EDBA06001EFD9E /* WSMVectorLogoView.m */; };
+		6EC75FF519EDBA06001EFD9E /* WSMVectorLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FEF19EDBA06001EFD9E /* WSMVectorLogoView.m */; };
+		6EC75FF619EDBA06001EFD9E /* WSMGravityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FF119EDBA06001EFD9E /* WSMGravityButton.m */; };
+		6EC75FF719EDBA06001EFD9E /* WSMGravityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FF119EDBA06001EFD9E /* WSMGravityButton.m */; };
+		6EC75FFB19EDBA10001EFD9E /* WSMEditableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FF819EDBA10001EFD9E /* WSMEditableTableViewCell.xib */; };
+		6EC75FFC19EDBA10001EFD9E /* WSMEditableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC75FF819EDBA10001EFD9E /* WSMEditableTableViewCell.xib */; };
+		6EC75FFD19EDBA10001EFD9E /* WSMEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FFA19EDBA10001EFD9E /* WSMEditableTableViewCell.m */; };
+		6EC75FFE19EDBA10001EFD9E /* WSMEditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC75FFA19EDBA10001EFD9E /* WSMEditableTableViewCell.m */; };
+		6EC7600119EDBADC001EFD9E /* WSMMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7600019EDBADC001EFD9E /* WSMMotionManager.m */; };
+		6EC7600319EDBD6C001EFD9E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC7600219EDBD6C001EFD9E /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +43,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1735A84666408045B7DEC0F1 /* Pods-AuthController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthController/Pods-AuthController.debug.xcconfig"; sourceTree = "<group>"; };
+		31D5DA141090C8D25A7BF564 /* Pods-AuthController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthController/Pods-AuthController.release.xcconfig"; sourceTree = "<group>"; };
+		51818CFE13B727949CE154F1 /* Pods-AuthControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthControllerTests/Pods-AuthControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EC75FBC19EDB945001EFD9E /* AuthController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC75FC019EDB945001EFD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC75FC119EDB945001EFD9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6EC75FC319EDB945001EFD9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6EC75FC419EDB945001EFD9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6EC75FC619EDB945001EFD9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6EC75FC719EDB945001EFD9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6EC75FCA19EDB945001EFD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EC75FCC19EDB945001EFD9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6EC75FCF19EDB945001EFD9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6EC75FD519EDB945001EFD9E /* AuthControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC75FDA19EDB945001EFD9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC75FDB19EDB945001EFD9E /* AuthControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthControllerTests.m; sourceTree = "<group>"; };
+		6EC75FE519EDB9F4001EFD9E /* SAMAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMAuthViewController.h; sourceTree = "<group>"; };
+		6EC75FE619EDB9F4001EFD9E /* SAMAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMAuthViewController.m; sourceTree = "<group>"; };
+		6EC75FE719EDB9F4001EFD9E /* WSMAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMAuthViewController.h; sourceTree = "<group>"; };
+		6EC75FE819EDB9F4001EFD9E /* WSMAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMAuthViewController.m; sourceTree = "<group>"; };
+		6EC75FED19EDBA06001EFD9E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6EC75FEE19EDBA06001EFD9E /* WSMVectorLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMVectorLogoView.h; sourceTree = "<group>"; };
+		6EC75FEF19EDBA06001EFD9E /* WSMVectorLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMVectorLogoView.m; sourceTree = "<group>"; };
+		6EC75FF019EDBA06001EFD9E /* WSMGravityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMGravityButton.h; sourceTree = "<group>"; };
+		6EC75FF119EDBA06001EFD9E /* WSMGravityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMGravityButton.m; sourceTree = "<group>"; };
+		6EC75FF819EDBA10001EFD9E /* WSMEditableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSMEditableTableViewCell.xib; sourceTree = "<group>"; };
+		6EC75FF919EDBA10001EFD9E /* WSMEditableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMEditableTableViewCell.h; sourceTree = "<group>"; };
+		6EC75FFA19EDBA10001EFD9E /* WSMEditableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMEditableTableViewCell.m; sourceTree = "<group>"; };
+		6EC75FFF19EDBADC001EFD9E /* WSMMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMMotionManager.h; sourceTree = "<group>"; };
+		6EC7600019EDBADC001EFD9E /* WSMMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMMotionManager.m; sourceTree = "<group>"; };
+		6EC7600219EDBD6C001EFD9E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		856368126B2B05DB4D516FEF /* Pods-AuthControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthControllerTests/Pods-AuthControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD56A5620EC57C126A432BEA /* libPods-AuthControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8847F87BF561F4DBC9FF301 /* libPods-AuthController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC7600319EDBD6C001EFD9E /* SpriteKit.framework in Frameworks */,
+				00DF72C41A81DB9FDCCC8430 /* libPods-AuthController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24670B97C04D7CFF21E3E4ED /* libPods-AuthControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +103,8 @@
 				6EC75FBE19EDB945001EFD9E /* AuthController */,
 				6EC75FD819EDB945001EFD9E /* AuthControllerTests */,
 				6EC75FBD19EDB945001EFD9E /* Products */,
+				B95CC315CF0872590C89F405 /* Pods */,
+				CBA94E25012F850205FAE4E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +120,10 @@
 		6EC75FBE19EDB945001EFD9E /* AuthController */ = {
 			isa = PBXGroup;
 			children = (
-				6EC75FC319EDB945001EFD9E /* AppDelegate.h */,
-				6EC75FC419EDB945001EFD9E /* AppDelegate.m */,
-				6EC75FC619EDB945001EFD9E /* ViewController.h */,
-				6EC75FC719EDB945001EFD9E /* ViewController.m */,
-				6EC75FC919EDB945001EFD9E /* Main.storyboard */,
+				6EC7600419EDBDA5001EFD9E /* Controllers */,
+				6EC7600519EDBE34001EFD9E /* Views */,
+				6EC7600619EDBE3F001EFD9E /* Models */,
 				6EC75FCC19EDB945001EFD9E /* Images.xcassets */,
-				6EC75FCE19EDB945001EFD9E /* LaunchScreen.xib */,
 				6EC75FBF19EDB945001EFD9E /* Supporting Files */,
 			);
 			path = AuthController;
@@ -119,6 +155,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6EC7600419EDBDA5001EFD9E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75FC319EDB945001EFD9E /* AppDelegate.h */,
+				6EC75FC419EDB945001EFD9E /* AppDelegate.m */,
+				6EC75FE519EDB9F4001EFD9E /* SAMAuthViewController.h */,
+				6EC75FE619EDB9F4001EFD9E /* SAMAuthViewController.m */,
+				6EC75FE719EDB9F4001EFD9E /* WSMAuthViewController.h */,
+				6EC75FE819EDB9F4001EFD9E /* WSMAuthViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6EC7600519EDBE34001EFD9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75FCE19EDB945001EFD9E /* LaunchScreen.xib */,
+				6EC75FED19EDBA06001EFD9E /* Main.storyboard */,
+				6EC75FEE19EDBA06001EFD9E /* WSMVectorLogoView.h */,
+				6EC75FEF19EDBA06001EFD9E /* WSMVectorLogoView.m */,
+				6EC75FF019EDBA06001EFD9E /* WSMGravityButton.h */,
+				6EC75FF119EDBA06001EFD9E /* WSMGravityButton.m */,
+				6EC75FF819EDBA10001EFD9E /* WSMEditableTableViewCell.xib */,
+				6EC75FF919EDBA10001EFD9E /* WSMEditableTableViewCell.h */,
+				6EC75FFA19EDBA10001EFD9E /* WSMEditableTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6EC7600619EDBE3F001EFD9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EC75FFF19EDBADC001EFD9E /* WSMMotionManager.h */,
+				6EC7600019EDBADC001EFD9E /* WSMMotionManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B95CC315CF0872590C89F405 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1735A84666408045B7DEC0F1 /* Pods-AuthController.debug.xcconfig */,
+				31D5DA141090C8D25A7BF564 /* Pods-AuthController.release.xcconfig */,
+				856368126B2B05DB4D516FEF /* Pods-AuthControllerTests.debug.xcconfig */,
+				51818CFE13B727949CE154F1 /* Pods-AuthControllerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBA94E25012F850205FAE4E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC7600219EDBD6C001EFD9E /* SpriteKit.framework */,
+				D8847F87BF561F4DBC9FF301 /* libPods-AuthController.a */,
+				CD56A5620EC57C126A432BEA /* libPods-AuthControllerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EC75FDF19EDB945001EFD9E /* Build configuration list for PBXNativeTarget "AuthController" */;
 			buildPhases = (
+				37BE95B95D3F51F0F58B6EBC /* Check Pods Manifest.lock */,
 				6EC75FB819EDB945001EFD9E /* Sources */,
 				6EC75FB919EDB945001EFD9E /* Frameworks */,
 				6EC75FBA19EDB945001EFD9E /* Resources */,
+				1F39A2C3C42C49860EB7F3D7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EC75FE219EDB945001EFD9E /* Build configuration list for PBXNativeTarget "AuthControllerTests" */;
 			buildPhases = (
+				91BFD4627DDF35EA60E79E66 /* Check Pods Manifest.lock */,
 				6EC75FD119EDB945001EFD9E /* Sources */,
 				6EC75FD219EDB945001EFD9E /* Frameworks */,
 				6EC75FD319EDB945001EFD9E /* Resources */,
+				FF1B141D49815F980899673C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC75FCB19EDB945001EFD9E /* Main.storyboard in Resources */,
+				6EC75FFB19EDBA10001EFD9E /* WSMEditableTableViewCell.xib in Resources */,
 				6EC75FD019EDB945001EFD9E /* LaunchScreen.xib in Resources */,
 				6EC75FCD19EDB945001EFD9E /* Images.xcassets in Resources */,
+				6EC75FF219EDBA06001EFD9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,19 +309,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC75FF319EDBA06001EFD9E /* Main.storyboard in Resources */,
+				6EC75FFC19EDBA10001EFD9E /* WSMEditableTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F39A2C3C42C49860EB7F3D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthController/Pods-AuthController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BE95B95D3F51F0F58B6EBC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91BFD4627DDF35EA60E79E66 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1B141D49815F980899673C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthControllerTests/Pods-AuthControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EC75FB819EDB945001EFD9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC75FC819EDB945001EFD9E /* ViewController.m in Sources */,
+				6EC75FFD19EDBA10001EFD9E /* WSMEditableTableViewCell.m in Sources */,
+				6EC7600119EDBADC001EFD9E /* WSMMotionManager.m in Sources */,
+				6EC75FF619EDBA06001EFD9E /* WSMGravityButton.m in Sources */,
+				6EC75FEB19EDB9F4001EFD9E /* WSMAuthViewController.m in Sources */,
+				6EC75FF419EDBA06001EFD9E /* WSMVectorLogoView.m in Sources */,
 				6EC75FC519EDB945001EFD9E /* AppDelegate.m in Sources */,
 				6EC75FC219EDB945001EFD9E /* main.m in Sources */,
+				6EC75FE919EDB9F4001EFD9E /* SAMAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC75FF719EDBA06001EFD9E /* WSMGravityButton.m in Sources */,
+				6EC75FF519EDBA06001EFD9E /* WSMVectorLogoView.m in Sources */,
+				6EC75FEC19EDB9F4001EFD9E /* WSMAuthViewController.m in Sources */,
 				6EC75FDC19EDB945001EFD9E /* AuthControllerTests.m in Sources */,
+				6EC75FEA19EDB9F4001EFD9E /* SAMAuthViewController.m in Sources */,
+				6EC75FFE19EDBA10001EFD9E /* WSMEditableTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +419,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6EC75FC919EDB945001EFD9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EC75FCA19EDB945001EFD9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6EC75FCE19EDB945001EFD9E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +508,7 @@
 		};
 		6EC75FE019EDB945001EFD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1735A84666408045B7DEC0F1 /* Pods-AuthController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AuthController/Info.plist;
@@ -351,6 +519,7 @@
 		};
 		6EC75FE119EDB945001EFD9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D5DA141090C8D25A7BF564 /* Pods-AuthController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AuthController/Info.plist;
@@ -361,6 +530,7 @@
 		};
 		6EC75FE319EDB945001EFD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856368126B2B05DB4D516FEF /* Pods-AuthControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +550,7 @@
 		};
 		6EC75FE419EDB945001EFD9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51818CFE13B727949CE154F1 /* Pods-AuthControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +583,7 @@
 				6EC75FE119EDB945001EFD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EC75FE219EDB945001EFD9E /* Build configuration list for PBXNativeTarget "AuthControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +592,7 @@
 				6EC75FE419EDB945001EFD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

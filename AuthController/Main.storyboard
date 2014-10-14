@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Rg-9k-TJ3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="7Hz-4a-Rvg">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kho-cQ-P1o" customClass="SAMAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CAq-Rx-ZxR"/>
+                        <viewControllerLayoutGuide type="bottom" id="zp0-mX-K1W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kKU-hc-NuH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sj9-Uq-Xcq" customClass="WSMVectorLogoView">
+                                <rect key="frame" x="159.5" y="100" width="280" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="5kL-XL-raA"/>
+                                    <constraint firstAttribute="width" constant="280" id="DjR-Q3-cwD"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KB-X2-Ziv">
+                                <rect key="frame" x="16" y="236" width="568" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="xwl-9n-He9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="File Store">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="A new type of document cloud based around proximity. ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-Dt-YPB">
+                                <rect key="frame" x="66" y="401" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Lyi-Mk-v8O"/>
+                                    <constraint firstAttribute="height" constant="50" id="tqS-dr-r5X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j67-qG-BBm">
+                                <rect key="frame" x="434" y="401" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QSg-Ik-0vU"/>
+                                    <constraint firstAttribute="height" constant="50" id="RKi-Op-fOV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nQk-YZ-8OQ">
+                                <rect key="frame" x="0.0" y="350" width="600" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="tmd-1s-fpG"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1KB-X2-Ziv" firstAttribute="trailing" secondItem="kKU-hc-NuH" secondAttribute="trailingMargin" id="4W2-Vo-I48"/>
+                            <constraint firstItem="1KB-X2-Ziv" firstAttribute="leading" secondItem="kKU-hc-NuH" secondAttribute="leadingMargin" id="4q0-TF-phW"/>
+                            <constraint firstItem="zp0-mX-K1W" firstAttribute="top" secondItem="yvv-Dt-YPB" secondAttribute="bottom" constant="100" id="8NZ-Mz-8XL"/>
+                            <constraint firstAttribute="centerX" secondItem="sj9-Uq-Xcq" secondAttribute="centerX" id="BnD-ix-mY5"/>
+                            <constraint firstItem="zp0-mX-K1W" firstAttribute="top" secondItem="j67-qG-BBm" secondAttribute="bottom" constant="100" id="CbS-ab-o7n"/>
+                            <constraint firstItem="j67-qG-BBm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yvv-Dt-YPB" secondAttribute="trailing" constant="50" id="Laz-ko-ox4"/>
+                            <constraint firstAttribute="bottom" secondItem="nQk-YZ-8OQ" secondAttribute="bottom" id="bdt-iw-fcE"/>
+                            <constraint firstItem="sj9-Uq-Xcq" firstAttribute="top" secondItem="CAq-Rx-ZxR" secondAttribute="bottom" constant="36" id="c6t-aR-Rxm"/>
+                            <constraint firstItem="nQk-YZ-8OQ" firstAttribute="leading" secondItem="kKU-hc-NuH" secondAttribute="leading" id="eeU-cU-lfq"/>
+                            <constraint firstAttribute="centerY" secondItem="1KB-X2-Ziv" secondAttribute="centerY" id="j1s-q3-L3t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j67-qG-BBm" secondAttribute="trailing" priority="900" constant="50" id="nc3-5j-INI"/>
+                            <constraint firstAttribute="trailing" secondItem="nQk-YZ-8OQ" secondAttribute="trailing" id="rUX-BD-Z9r"/>
+                            <constraint firstItem="yvv-Dt-YPB" firstAttribute="leading" secondItem="kKU-hc-NuH" secondAttribute="leadingMargin" priority="900" constant="50" id="v1M-OS-d1y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bwn-Ej-hAn">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="368-cq-FSU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="368-cq-FSU" id="Rjq-s7-Joj"/>
+                        <outlet property="signInButton" destination="yvv-Dt-YPB" id="dDN-gA-Ro8"/>
+                        <outlet property="signUpButton" destination="j67-qG-BBm" id="siX-iG-KXP"/>
+                        <outlet property="smallVectorLogo" destination="sj9-Uq-Xcq" id="aco-j9-MTa"/>
+                        <outlet property="tableView" destination="nQk-YZ-8OQ" id="DhV-nk-cVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJg-zY-vFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Zd-VK-OA1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Rg-9k-TJ3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZEF-sq-BEm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kho-cQ-P1o" kind="relationship" relationship="rootViewController" id="3w9-pu-bzS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYj-zo-fiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-608"/>
+        </scene>
+    </scenes>
+</document>
