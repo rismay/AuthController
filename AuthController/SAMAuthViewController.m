@@ -39,18 +39,25 @@
     [self.smallVectorLogo pulseView:YES];
 }
 
-- (void) styleAuthButtons {
-    self.signInButton.backgroundColor = [WSMColorPalette colorGradient:kWSMGradientGreen
+- (void)authController:(WSMAuthViewController*)authController
+           styleSignIn:(UIButton *)signIn
+                signUp:(UIButton *)signUp {
+    signIn.layer.cornerRadius = 5.0;
+    signIn.backgroundColor = [WSMColorPalette colorGradient:kWSMGradientGreen
                                                               forIndex:0
                                                                ofCount:0
                                                               reversed:NO];
-    self.signUpButton.backgroundColor = [WSMColorPalette colorGradient:kWSMGradientBlue
+    
+    signUp.layer.cornerRadius = 5.0;
+    signUp.backgroundColor = [WSMColorPalette colorGradient:kWSMGradientBlue
                                                               forIndex:0
                                                                ofCount:0
                                                               reversed:NO];
 }
 
-- (void)authenticateWithUsername:(NSString *)username password:(NSString *)password {
+- (void)authController:(WSMAuthViewController*)authController
+  authenticateUsername:(NSString *)username
+              password:(NSString *)password {
     [[[UIAlertView alloc] initWithTitle:@"Correct Password"
                                 message:@"BTW: This will always works"
                                delegate:nil

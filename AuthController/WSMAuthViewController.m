@@ -95,8 +95,8 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
     self.signUpButton.rac_command = command;
     self.cancelButton.rac_command = command;
     
-    if ([self.delegate respondsToSelector:@selector(styleAuthButtons)]) {
-        [self.delegate styleAuthButtons];
+    if ([self.delegate respondsToSelector:@selector(authController:styleSignIn:signUp:)]) {
+        [self.delegate authController:self styleSignIn:self.signInButton signUp:self.signUpButton];
     } else {
         self.signInButton.backgroundColor = [UIColor grayColor];
         self.signUpButton.backgroundColor = [UIColor darkGrayColor];
@@ -117,6 +117,7 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
                      case kWSMAuthTableViewTypeSignUp: {
                          self.tableView.frame = CGRectOffset(self.tableView.frame, 0,
                                                              -CGRectGetHeight(self.tableView.frame));
+                         self.tableView.alpha = 1.0f;
                          self.signInButton.alpha = self.signUpButton.alpha = 0.0f;
                          self.cancelButton.enabled = YES;
                          self.cancelButton.title = @"Cancel";
@@ -124,6 +125,7 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
                      case kWSMAuthTableViewTypeUnknown: {
                          self.tableView.frame = CGRectOffset(self.tableView.frame, 0,
                                                              CGRectGetHeight(self.tableView.frame));
+                         self.tableView.alpha = 0.0f;
                          self.signInButton.alpha = self.signUpButton.alpha = 1.0f;
                          self.cancelButton.enabled = NO;
                          self.cancelButton.title = @"";
@@ -266,8 +268,8 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
                     [textField endEditing:YES];
                     NSString *trimmedUsername = [usernameCell.detailTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
                     NSString *password = passwordCell.detailTextField.text;
-                    if ([self.delegate respondsToSelector:@selector(authenticateWithUsername:password:)]) {
-                        [self.delegate authenticateWithUsername:trimmedUsername password:password];
+                    if ([self.delegate respondsToSelector:@selector(authController:authenticateUsername:password:)]) {
+                        [self.delegate authController:self authenticateUsername:trimmedUsername password:password];
                     }
                     return YES;
                 } else {
@@ -289,8 +291,8 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
                 [textField endEditing:YES];
                 NSString *trimmedUsername = [usernameCell.detailTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
                 NSString *password = passwordCell.detailTextField.text;
-                if ([self.delegate respondsToSelector:@selector(authenticateWithUsername:password:)]) {
-                    [self.delegate authenticateWithUsername:trimmedUsername password:password];
+                if ([self.delegate respondsToSelector:@selector(authController:authenticateUsername:password:)]) {
+                    [self.delegate authController:self authenticateUsername:trimmedUsername password:password];
                 }
                 return YES;
             } else {
