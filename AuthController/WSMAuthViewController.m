@@ -17,7 +17,6 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
 #pragma mark - Controller State.
 @property (nonatomic) WSMAuthTableViewType controllerType;
-@property (nonatomic) BOOL tableViewOffset;
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *cancelButton;
@@ -165,36 +164,36 @@ UITableViewDelegate, UITableViewDelegate, UITableViewDataSource>
 }
 
 - (void)configureKeyboardAnimations {
-    CGFloat duration = 0.9, damping = 0.8;
+    CGFloat damping = 0.8;
     @weakify(self);
     [[[NSNotificationCenter.defaultCenter rac_addObserverForName:UIKeyboardWillShowNotification
                                                           object:nil]
       takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification *notification) {
         @strongify(self);
-        if (!self.tableViewOffset) {
-            CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-            [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:damping
-                  initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent
-                             animations:^{
-                                 self.tableView.frame = CGRectOffset(self.tableView.frame, 0,
-                                                                     -CGRectGetHeight(keyboardRect));
-                             } completion:^(BOOL finished) {}];
-            self.tableViewOffset = YES;
-        }
+        CGRect keyboardRectBegin = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+        CGRect keyboardRectEnd = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        CGFloat offset = CGRectGetMinY(keyboardRectEnd) - CGRectGetMinY(keyboardRectBegin);
+        NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+        [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:damping
+              initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.tableView.frame = CGRectOffset(self.tableView.frame, 0, offset);
+                         } completion:nil];
     }];
     
     [[[NSNotificationCenter.defaultCenter rac_addObserverForName:UIKeyboardWillHideNotification
                                                           object:nil]
       takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification *notification) {
         @strongify(self);
-        CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+        CGRect keyboardRectBegin = [notification.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+        CGRect keyboardRectEnd = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        CGFloat offset = CGRectGetMinY(keyboardRectEnd) - CGRectGetMinY(keyboardRectBegin);
+        NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
         [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:damping
               initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent
                          animations:^{
-                             self.tableView.frame = CGRectOffset(self.tableView.frame, 0,
-                                                                 CGRectGetHeight(keyboardRect));
-                         } completion:^(BOOL finished) {}];
-        self.tableViewOffset = NO;
+                             self.tableView.frame = CGRectOffset(self.tableView.frame, 0, offset);
+                         } completion:nil];
     }];
 }
 
